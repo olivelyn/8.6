@@ -12,11 +12,54 @@
     </script>
 
     <body>
+        <div class="wrap">
+            <header>
+                开头
+            </header>
+            <section>
+                <div class="list">
+
+                    <div class="box">
+                        <!-- <dl>
+                            <dd>wwjwjwjwjwjwj</dd>
+                            <dt>tubai</dt>
+                        </dl>
+                        <dl>
+                            <dd>wwjwjwjwjwjwj</dd>
+                            <dt>tubai</dt>
+                        </dl>
+                        <dl>
+                            <dd>wwjwjwjwjwjwj</dd>
+                            <dt>tubai</dt>
+                        </dl>
+                        <dl>
+                            <dd>wwjwjwjwjwjwj</dd>
+                            <dt>tubai</dt>
+                        </dl>
+                        <dl>
+                            <dd>wwjwjwjwjwjwj</dd>
+                            <dt>tubai</dt>
+                        </dl> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
         <script src='./js/libs/require.js'></script>
         <script>
             require(['./js/main.js'], function() {
                 require(['index'])
             })
+        </script>
+        <script id="box" type="text/x-handlebars-template">
+            {{#each lists}}
+            <dl>
+                <dd>
+                    <h1>{{tit}}</h1>
+                    <h1>{{txt}}</h1>
+                </dd>
+                <dt><img src="{{img}}" alt=""></dt>
+            </dl>{{/each}}
         </script>
 
     </body>
